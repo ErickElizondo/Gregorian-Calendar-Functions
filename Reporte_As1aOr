@@ -1,0 +1,507 @@
+As1aOr.py:1:4: W291 trailing whitespace
+As1aOr.py:5:37: W291 trailing whitespace
+As1aOr.py:6:1: W293 blank line contains whitespace
+As1aOr.py:7:20: W291 trailing whitespace
+As1aOr.py:10:53: W291 trailing whitespace
+As1aOr.py:13:1: W293 blank line contains whitespace
+As1aOr.py:17:1: E265 block comment should start with '# '
+As1aOr.py:17:80: E501 line too long (81 > 79 characters)
+As1aOr.py:18:1: E265 block comment should start with '# '
+As1aOr.py:18:80: E501 line too long (81 > 79 characters)
+As1aOr.py:19:1: E265 block comment should start with '# '
+As1aOr.py:19:80: E501 line too long (81 > 79 characters)
+As1aOr.py:21:34: E225 missing whitespace around operator
+As1aOr.py:21:80: E501 line too long (113 > 79 characters)
+As1aOr.py:21:114: W291 trailing whitespace
+As1aOr.py:22:14: E225 missing whitespace around operator
+As1aOr.py:22:17: E231 missing whitespace after ','
+As1aOr.py:22:19: E231 missing whitespace after ','
+As1aOr.py:22:21: E231 missing whitespace after ','
+As1aOr.py:22:23: E231 missing whitespace after ','
+As1aOr.py:22:25: E231 missing whitespace after ','
+As1aOr.py:22:28: E231 missing whitespace after ','
+As1aOr.py:22:80: E501 line too long (87 > 79 characters)
+As1aOr.py:23:14: E225 missing whitespace around operator
+As1aOr.py:23:17: E231 missing whitespace after ','
+As1aOr.py:23:19: E231 missing whitespace after ','
+As1aOr.py:23:21: E231 missing whitespace after ','
+As1aOr.py:23:80: E501 line too long (87 > 79 characters)
+As1aOr.py:26:1: E265 block comment should start with '# '
+As1aOr.py:26:80: E501 line too long (81 > 79 characters)
+As1aOr.py:27:1: E265 block comment should start with '# '
+As1aOr.py:27:80: E501 line too long (81 > 79 characters)
+As1aOr.py:28:1: E265 block comment should start with '# '
+As1aOr.py:28:80: E501 line too long (81 > 79 characters)
+As1aOr.py:30:1: E265 block comment should start with '# '
+As1aOr.py:30:80: E501 line too long (89 > 79 characters)
+As1aOr.py:32:80: E501 line too long (100 > 79 characters)
+As1aOr.py:32:104: W291 trailing whitespace
+As1aOr.py:33:80: E501 line too long (88 > 79 characters)
+As1aOr.py:35:26: E203 whitespace before ':'
+As1aOr.py:36:23: E203 whitespace before ':'
+As1aOr.py:37:80: E501 line too long (85 > 79 characters)
+As1aOr.py:39:52: E203 whitespace before ':'
+As1aOr.py:45:1: E265 block comment should start with '# '
+As1aOr.py:45:80: E501 line too long (83 > 79 characters)
+As1aOr.py:47:80: E501 line too long (91 > 79 characters)
+As1aOr.py:47:94: W291 trailing whitespace
+As1aOr.py:48:57: W291 trailing whitespace
+As1aOr.py:50:19: E203 whitespace before ':'
+As1aOr.py:51:25: E203 whitespace before ':'
+As1aOr.py:52:29: E203 whitespace before ':'
+As1aOr.py:54:9: E203 whitespace before ':'
+As1aOr.py:55:27: E203 whitespace before ':'
+As1aOr.py:60:1: E265 block comment should start with '# '
+As1aOr.py:60:80: E501 line too long (90 > 79 characters)
+As1aOr.py:62:80: E501 line too long (90 > 79 characters)
+As1aOr.py:66:19: E225 missing whitespace around operator
+As1aOr.py:68:32: E225 missing whitespace around operator
+As1aOr.py:68:51: E225 missing whitespace around operator
+As1aOr.py:68:53: E701 multiple statements on one line (colon)
+As1aOr.py:69:21: E225 missing whitespace around operator
+As1aOr.py:69:65: E262 inline comment should start with '# '
+As1aOr.py:69:80: E501 line too long (109 > 79 characters)
+As1aOr.py:70:44: E231 missing whitespace after ','
+As1aOr.py:70:53: E231 missing whitespace after ','
+As1aOr.py:70:65: E262 inline comment should start with '# '
+As1aOr.py:70:80: E501 line too long (107 > 79 characters)
+As1aOr.py:71:13: E203 whitespace before ':'
+As1aOr.py:71:14: E701 multiple statements on one line (colon)
+As1aOr.py:72:9: E701 multiple statements on one line (colon)
+As1aOr.py:74:80: E501 line too long (100 > 79 characters)
+As1aOr.py:74:105: W291 trailing whitespace
+As1aOr.py:75:1: E302 expected 2 blank lines, found 1
+As1aOr.py:75:29: E203 whitespace before ','
+As1aOr.py:76:37: E225 missing whitespace around operator
+As1aOr.py:76:41: E701 multiple statements on one line (colon)
+As1aOr.py:76:54: E225 missing whitespace around operator
+As1aOr.py:76:59: W291 trailing whitespace
+As1aOr.py:77:39: E225 missing whitespace around operator
+As1aOr.py:77:43: E701 multiple statements on one line (colon)
+As1aOr.py:77:56: E225 missing whitespace around operator
+As1aOr.py:77:61: W291 trailing whitespace
+As1aOr.py:78:14: E225 missing whitespace around operator
+As1aOr.py:78:25: E225 missing whitespace around operator
+As1aOr.py:79:25: E701 multiple statements on one line (colon)
+As1aOr.py:79:38: E225 missing whitespace around operator
+As1aOr.py:80:13: E203 whitespace before ':'
+As1aOr.py:80:14: E231 missing whitespace after ':'
+As1aOr.py:80:14: E701 multiple statements on one line (colon)
+As1aOr.py:80:26: E225 missing whitespace around operator
+As1aOr.py:81:9: E203 whitespace before ':'
+As1aOr.py:81:10: E231 missing whitespace after ':'
+As1aOr.py:81:10: E701 multiple statements on one line (colon)
+As1aOr.py:84:1: E265 block comment should start with '# '
+As1aOr.py:84:80: E501 line too long (88 > 79 characters)
+As1aOr.py:86:80: E501 line too long (114 > 79 characters)
+As1aOr.py:86:118: W291 trailing whitespace
+As1aOr.py:87:80: E501 line too long (97 > 79 characters)
+As1aOr.py:87:99: W291 trailing whitespace
+As1aOr.py:88:80: E501 line too long (87 > 79 characters)
+As1aOr.py:88:89: W291 trailing whitespace
+As1aOr.py:91:35: E262 inline comment should start with '# '
+As1aOr.py:91:80: E501 line too long (110 > 79 characters)
+As1aOr.py:92:40: E261 at least two spaces before inline comment
+As1aOr.py:92:41: E262 inline comment should start with '# '
+As1aOr.py:92:80: E501 line too long (90 > 79 characters)
+As1aOr.py:93:28: E225 missing whitespace around operator
+As1aOr.py:93:31: E701 multiple statements on one line (colon)
+As1aOr.py:93:49: E231 missing whitespace after ','
+As1aOr.py:93:58: E231 missing whitespace after ','
+As1aOr.py:93:70: W291 trailing whitespace
+As1aOr.py:94:17: E203 whitespace before ':'
+As1aOr.py:94:18: E701 multiple statements on one line (colon)
+As1aOr.py:96:28: E225 missing whitespace around operator
+As1aOr.py:96:31: E701 multiple statements on one line (colon)
+As1aOr.py:96:49: E231 missing whitespace after ','
+As1aOr.py:96:58: E231 missing whitespace after ','
+As1aOr.py:96:70: W291 trailing whitespace
+As1aOr.py:97:17: E203 whitespace before ':'
+As1aOr.py:97:18: E701 multiple statements on one line (colon)
+As1aOr.py:97:48: E262 inline comment should start with '# '
+As1aOr.py:97:80: E501 line too long (87 > 79 characters)
+As1aOr.py:97:89: W291 trailing whitespace
+As1aOr.py:98:13: E701 multiple statements on one line (colon)
+As1aOr.py:98:48: E262 inline comment should start with '# '
+As1aOr.py:98:80: E501 line too long (94 > 79 characters)
+As1aOr.py:99:9: E701 multiple statements on one line (colon)
+As1aOr.py:100:1: W293 blank line contains whitespace
+As1aOr.py:101:1: E265 block comment should start with '# '
+As1aOr.py:102:1: E302 expected 2 blank lines, found 1
+As1aOr.py:103:17: E225 missing whitespace around operator
+As1aOr.py:103:21: E701 multiple statements on one line (colon)
+As1aOr.py:103:39: E231 missing whitespace after ','
+As1aOr.py:103:50: E231 missing whitespace after ','
+As1aOr.py:104:23: E231 missing whitespace after ','
+As1aOr.py:104:25: E231 missing whitespace after ','
+As1aOr.py:106:1: E265 block comment should start with '# '
+As1aOr.py:107:1: E302 expected 2 blank lines, found 1
+As1aOr.py:108:29: W291 trailing whitespace
+As1aOr.py:109:21: E225 missing whitespace around operator
+As1aOr.py:109:25: E203 whitespace before ':'
+As1aOr.py:109:26: E701 multiple statements on one line (colon)
+As1aOr.py:109:44: E231 missing whitespace after ','
+As1aOr.py:109:53: E231 missing whitespace after ','
+As1aOr.py:109:65: W291 trailing whitespace
+As1aOr.py:110:13: E203 whitespace before ':'
+As1aOr.py:110:14: E701 multiple statements on one line (colon)
+As1aOr.py:112:21: E225 missing whitespace around operator
+As1aOr.py:112:25: E203 whitespace before ':'
+As1aOr.py:112:26: E701 multiple statements on one line (colon)
+As1aOr.py:112:44: E231 missing whitespace after ','
+As1aOr.py:112:53: E231 missing whitespace after ','
+As1aOr.py:112:65: W291 trailing whitespace
+As1aOr.py:113:13: E203 whitespace before ':'
+As1aOr.py:113:14: E701 multiple statements on one line (colon)
+As1aOr.py:115:1: E265 block comment should start with '# '
+As1aOr.py:115:80: E501 line too long (86 > 79 characters)
+As1aOr.py:117:80: E501 line too long (110 > 79 characters)
+As1aOr.py:117:118: W291 trailing whitespace
+As1aOr.py:118:80: E501 line too long (88 > 79 characters)
+As1aOr.py:118:89: W291 trailing whitespace
+As1aOr.py:119:80: E501 line too long (98 > 79 characters)
+As1aOr.py:120:42: W291 trailing whitespace
+As1aOr.py:123:24: W291 trailing whitespace
+As1aOr.py:125:80: E501 line too long (114 > 79 characters)
+As1aOr.py:129:36: E261 at least two spaces before inline comment
+As1aOr.py:131:40: E261 at least two spaces before inline comment
+As1aOr.py:132:1: W293 blank line contains whitespace
+As1aOr.py:134:15: E271 multiple spaces after keyword
+As1aOr.py:134:50: E261 at least two spaces before inline comment
+As1aOr.py:134:80: E501 line too long (88 > 79 characters)
+As1aOr.py:135:1: W293 blank line contains whitespace
+As1aOr.py:136:1: E265 block comment should start with '# '
+As1aOr.py:136:80: E501 line too long (85 > 79 characters)
+As1aOr.py:138:80: E501 line too long (115 > 79 characters)
+As1aOr.py:139:80: E501 line too long (88 > 79 characters)
+As1aOr.py:140:80: W291 trailing whitespace
+As1aOr.py:142:1: E265 block comment should start with '# '
+As1aOr.py:142:80: E501 line too long (135 > 79 characters)
+As1aOr.py:143:1: E265 block comment should start with '# '
+As1aOr.py:144:1: E265 block comment should start with '# '
+As1aOr.py:144:80: E501 line too long (106 > 79 characters)
+As1aOr.py:146:1: E302 expected 2 blank lines, found 1
+As1aOr.py:146:23: W291 trailing whitespace
+As1aOr.py:152:9: E265 block comment should start with '# '
+As1aOr.py:152:80: E501 line too long (97 > 79 characters)
+As1aOr.py:153:9: E265 block comment should start with '# '
+As1aOr.py:154:68: W291 trailing whitespace
+As1aOr.py:155:16: E225 missing whitespace around operator
+As1aOr.py:158:49: E261 at least two spaces before inline comment
+As1aOr.py:158:50: E262 inline comment should start with '# '
+As1aOr.py:158:80: E501 line too long (85 > 79 characters)
+As1aOr.py:161:1: E302 expected 2 blank lines, found 1
+As1aOr.py:166:1: E302 expected 2 blank lines, found 1
+As1aOr.py:167:13: E225 missing whitespace around operator
+As1aOr.py:170:80: E501 line too long (87 > 79 characters)
+As1aOr.py:171:80: E501 line too long (93 > 79 characters)
+As1aOr.py:172:1: E302 expected 2 blank lines, found 1
+As1aOr.py:172:23: W291 trailing whitespace
+As1aOr.py:189:1: E265 block comment should start with '# '
+As1aOr.py:189:80: E501 line too long (83 > 79 characters)
+As1aOr.py:190:1: E265 block comment should start with '# '
+As1aOr.py:190:80: E501 line too long (83 > 79 characters)
+As1aOr.py:191:1: E265 block comment should start with '# '
+As1aOr.py:191:80: E501 line too long (83 > 79 characters)
+As1aOr.py:194:1: E265 block comment should start with '# '
+As1aOr.py:194:80: E501 line too long (82 > 79 characters)
+As1aOr.py:196:80: E501 line too long (84 > 79 characters)
+As1aOr.py:198:19: E231 missing whitespace after ','
+As1aOr.py:198:22: E231 missing whitespace after ','
+As1aOr.py:198:37: E262 inline comment should start with '# '
+As1aOr.py:199:16: E231 missing whitespace after ','
+As1aOr.py:199:19: E231 missing whitespace after ','
+As1aOr.py:199:37: E262 inline comment should start with '# '
+As1aOr.py:200:27: E231 missing whitespace after ','
+As1aOr.py:200:29: E231 missing whitespace after ','
+As1aOr.py:200:37: E262 inline comment should start with '# '
+As1aOr.py:201:19: E231 missing whitespace after ','
+As1aOr.py:201:22: E231 missing whitespace after ','
+As1aOr.py:201:37: E262 inline comment should start with '# '
+As1aOr.py:202:17: E231 missing whitespace after ','
+As1aOr.py:202:22: E231 missing whitespace after ','
+As1aOr.py:202:37: E262 inline comment should start with '# '
+As1aOr.py:203:19: E231 missing whitespace after ','
+As1aOr.py:203:21: E231 missing whitespace after ','
+As1aOr.py:203:37: E262 inline comment should start with '# '
+As1aOr.py:204:19: E231 missing whitespace after ','
+As1aOr.py:204:21: E231 missing whitespace after ','
+As1aOr.py:204:37: E262 inline comment should start with '# '
+As1aOr.py:205:16: E231 missing whitespace after ','
+As1aOr.py:205:18: E231 missing whitespace after ','
+As1aOr.py:205:37: E262 inline comment should start with '# '
+As1aOr.py:206:20: E231 missing whitespace after ','
+As1aOr.py:206:27: E231 missing whitespace after ','
+As1aOr.py:206:44: E231 missing whitespace after ','
+As1aOr.py:207:20: E231 missing whitespace after ','
+As1aOr.py:207:27: E231 missing whitespace after ','
+As1aOr.py:207:44: E231 missing whitespace after ','
+As1aOr.py:208:20: E231 missing whitespace after ','
+As1aOr.py:208:27: E231 missing whitespace after ','
+As1aOr.py:208:44: E231 missing whitespace after ','
+As1aOr.py:209:20: E231 missing whitespace after ','
+As1aOr.py:209:27: E231 missing whitespace after ','
+As1aOr.py:209:44: E231 missing whitespace after ','
+As1aOr.py:210:20: E231 missing whitespace after ','
+As1aOr.py:210:27: E231 missing whitespace after ','
+As1aOr.py:210:44: E231 missing whitespace after ','
+As1aOr.py:211:20: E231 missing whitespace after ','
+As1aOr.py:211:27: E231 missing whitespace after ','
+As1aOr.py:211:44: E231 missing whitespace after ','
+As1aOr.py:212:20: E231 missing whitespace after ','
+As1aOr.py:212:27: E231 missing whitespace after ','
+As1aOr.py:212:44: E231 missing whitespace after ','
+As1aOr.py:213:20: E231 missing whitespace after ','
+As1aOr.py:213:27: E231 missing whitespace after ','
+As1aOr.py:213:44: E231 missing whitespace after ','
+As1aOr.py:214:1: W293 blank line contains whitespace
+As1aOr.py:216:1: E265 block comment should start with '# '
+As1aOr.py:216:80: E501 line too long (82 > 79 characters)
+As1aOr.py:218:80: E501 line too long (84 > 79 characters)
+As1aOr.py:220:21: E262 inline comment should start with '# '
+As1aOr.py:221:21: E262 inline comment should start with '# '
+As1aOr.py:222:21: E262 inline comment should start with '# '
+As1aOr.py:223:21: E262 inline comment should start with '# '
+As1aOr.py:224:21: E262 inline comment should start with '# '
+As1aOr.py:225:21: E262 inline comment should start with '# '
+As1aOr.py:226:21: E262 inline comment should start with '# '
+As1aOr.py:227:21: E262 inline comment should start with '# '
+As1aOr.py:228:19: E231 missing whitespace after ','
+As1aOr.py:228:25: E231 missing whitespace after ','
+As1aOr.py:228:42: E231 missing whitespace after ','
+As1aOr.py:229:19: E231 missing whitespace after ','
+As1aOr.py:229:25: E231 missing whitespace after ','
+As1aOr.py:229:42: E231 missing whitespace after ','
+As1aOr.py:230:19: E231 missing whitespace after ','
+As1aOr.py:230:25: E231 missing whitespace after ','
+As1aOr.py:230:42: E231 missing whitespace after ','
+As1aOr.py:231:19: E231 missing whitespace after ','
+As1aOr.py:231:25: E231 missing whitespace after ','
+As1aOr.py:231:42: E231 missing whitespace after ','
+As1aOr.py:232:19: E231 missing whitespace after ','
+As1aOr.py:232:25: E231 missing whitespace after ','
+As1aOr.py:232:42: E231 missing whitespace after ','
+As1aOr.py:233:19: E231 missing whitespace after ','
+As1aOr.py:233:25: E231 missing whitespace after ','
+As1aOr.py:233:42: E231 missing whitespace after ','
+As1aOr.py:234:19: E231 missing whitespace after ','
+As1aOr.py:234:25: E231 missing whitespace after ','
+As1aOr.py:234:42: E231 missing whitespace after ','
+As1aOr.py:235:19: E231 missing whitespace after ','
+As1aOr.py:235:25: E231 missing whitespace after ','
+As1aOr.py:235:42: E231 missing whitespace after ','
+As1aOr.py:237:1: E265 block comment should start with '# '
+As1aOr.py:237:80: E501 line too long (82 > 79 characters)
+As1aOr.py:238:1: E302 expected 2 blank lines, found 1
+As1aOr.py:239:80: E501 line too long (84 > 79 characters)
+As1aOr.py:241:19: E231 missing whitespace after ','
+As1aOr.py:241:22: E231 missing whitespace after ','
+As1aOr.py:241:29: E262 inline comment should start with '# '
+As1aOr.py:242:19: E231 missing whitespace after ','
+As1aOr.py:242:22: E231 missing whitespace after ','
+As1aOr.py:242:29: E262 inline comment should start with '# '
+As1aOr.py:243:19: E231 missing whitespace after ','
+As1aOr.py:243:21: E231 missing whitespace after ','
+As1aOr.py:243:29: E262 inline comment should start with '# '
+As1aOr.py:244:19: E231 missing whitespace after ','
+As1aOr.py:244:21: E231 missing whitespace after ','
+As1aOr.py:244:29: E262 inline comment should start with '# '
+As1aOr.py:245:19: E231 missing whitespace after ','
+As1aOr.py:245:22: E231 missing whitespace after ','
+As1aOr.py:245:29: E262 inline comment should start with '# '
+As1aOr.py:246:19: E231 missing whitespace after ','
+As1aOr.py:246:21: E231 missing whitespace after ','
+As1aOr.py:246:29: E262 inline comment should start with '# '
+As1aOr.py:247:19: E231 missing whitespace after ','
+As1aOr.py:247:21: E231 missing whitespace after ','
+As1aOr.py:247:29: E262 inline comment should start with '# '
+As1aOr.py:248:19: E231 missing whitespace after ','
+As1aOr.py:248:21: E231 missing whitespace after ','
+As1aOr.py:248:29: E262 inline comment should start with '# '
+As1aOr.py:249:20: E231 missing whitespace after ','
+As1aOr.py:249:27: E231 missing whitespace after ','
+As1aOr.py:249:44: E231 missing whitespace after ','
+As1aOr.py:250:20: E231 missing whitespace after ','
+As1aOr.py:250:27: E231 missing whitespace after ','
+As1aOr.py:250:44: E231 missing whitespace after ','
+As1aOr.py:251:20: E231 missing whitespace after ','
+As1aOr.py:251:27: E231 missing whitespace after ','
+As1aOr.py:251:44: E231 missing whitespace after ','
+As1aOr.py:252:20: E231 missing whitespace after ','
+As1aOr.py:252:27: E231 missing whitespace after ','
+As1aOr.py:252:44: E231 missing whitespace after ','
+As1aOr.py:253:20: E231 missing whitespace after ','
+As1aOr.py:253:27: E231 missing whitespace after ','
+As1aOr.py:253:44: E231 missing whitespace after ','
+As1aOr.py:254:20: E231 missing whitespace after ','
+As1aOr.py:254:27: E231 missing whitespace after ','
+As1aOr.py:254:44: E231 missing whitespace after ','
+As1aOr.py:255:20: E231 missing whitespace after ','
+As1aOr.py:255:27: E231 missing whitespace after ','
+As1aOr.py:255:44: E231 missing whitespace after ','
+As1aOr.py:256:20: E231 missing whitespace after ','
+As1aOr.py:256:27: E231 missing whitespace after ','
+As1aOr.py:256:44: E231 missing whitespace after ','
+As1aOr.py:258:1: E265 block comment should start with '# '
+As1aOr.py:258:80: E501 line too long (82 > 79 characters)
+As1aOr.py:259:1: E302 expected 2 blank lines, found 1
+As1aOr.py:260:80: E501 line too long (84 > 79 characters)
+As1aOr.py:263:19: E231 missing whitespace after ','
+As1aOr.py:263:22: E231 missing whitespace after ','
+As1aOr.py:263:29: E262 inline comment should start with '# '
+As1aOr.py:264:19: E231 missing whitespace after ','
+As1aOr.py:264:22: E231 missing whitespace after ','
+As1aOr.py:264:29: E262 inline comment should start with '# '
+As1aOr.py:265:19: E231 missing whitespace after ','
+As1aOr.py:265:21: E231 missing whitespace after ','
+As1aOr.py:265:29: E262 inline comment should start with '# '
+As1aOr.py:266:19: E231 missing whitespace after ','
+As1aOr.py:266:21: E231 missing whitespace after ','
+As1aOr.py:266:29: E262 inline comment should start with '# '
+As1aOr.py:267:19: E231 missing whitespace after ','
+As1aOr.py:267:22: E231 missing whitespace after ','
+As1aOr.py:267:29: E262 inline comment should start with '# '
+As1aOr.py:268:19: E231 missing whitespace after ','
+As1aOr.py:268:21: E231 missing whitespace after ','
+As1aOr.py:268:29: E262 inline comment should start with '# '
+As1aOr.py:269:19: E231 missing whitespace after ','
+As1aOr.py:269:21: E231 missing whitespace after ','
+As1aOr.py:269:29: E262 inline comment should start with '# '
+As1aOr.py:270:19: E231 missing whitespace after ','
+As1aOr.py:270:21: E231 missing whitespace after ','
+As1aOr.py:270:29: E262 inline comment should start with '# '
+As1aOr.py:270:64: W291 trailing whitespace
+As1aOr.py:271:20: E231 missing whitespace after ','
+As1aOr.py:271:27: E231 missing whitespace after ','
+As1aOr.py:271:44: E231 missing whitespace after ','
+As1aOr.py:272:20: E231 missing whitespace after ','
+As1aOr.py:272:27: E231 missing whitespace after ','
+As1aOr.py:272:44: E231 missing whitespace after ','
+As1aOr.py:273:20: E231 missing whitespace after ','
+As1aOr.py:273:27: E231 missing whitespace after ','
+As1aOr.py:273:44: E231 missing whitespace after ','
+As1aOr.py:274:20: E231 missing whitespace after ','
+As1aOr.py:274:27: E231 missing whitespace after ','
+As1aOr.py:274:44: E231 missing whitespace after ','
+As1aOr.py:275:20: E231 missing whitespace after ','
+As1aOr.py:275:27: E231 missing whitespace after ','
+As1aOr.py:275:44: E231 missing whitespace after ','
+As1aOr.py:276:20: E231 missing whitespace after ','
+As1aOr.py:276:27: E231 missing whitespace after ','
+As1aOr.py:276:44: E231 missing whitespace after ','
+As1aOr.py:277:20: E231 missing whitespace after ','
+As1aOr.py:277:27: E231 missing whitespace after ','
+As1aOr.py:277:44: E231 missing whitespace after ','
+As1aOr.py:278:20: E231 missing whitespace after ','
+As1aOr.py:278:27: E231 missing whitespace after ','
+As1aOr.py:278:44: E231 missing whitespace after ','
+As1aOr.py:278:67: W291 trailing whitespace
+As1aOr.py:280:1: E265 block comment should start with '# '
+As1aOr.py:280:80: E501 line too long (82 > 79 characters)
+As1aOr.py:281:1: E302 expected 2 blank lines, found 1
+As1aOr.py:282:80: E501 line too long (84 > 79 characters)
+As1aOr.py:284:19: E231 missing whitespace after ','
+As1aOr.py:284:22: E231 missing whitespace after ','
+As1aOr.py:284:29: E262 inline comment should start with '# '
+As1aOr.py:285:19: E231 missing whitespace after ','
+As1aOr.py:285:22: E231 missing whitespace after ','
+As1aOr.py:285:29: E262 inline comment should start with '# '
+As1aOr.py:286:19: E231 missing whitespace after ','
+As1aOr.py:286:21: E231 missing whitespace after ','
+As1aOr.py:286:29: E262 inline comment should start with '# '
+As1aOr.py:287:19: E231 missing whitespace after ','
+As1aOr.py:287:21: E231 missing whitespace after ','
+As1aOr.py:287:29: E262 inline comment should start with '# '
+As1aOr.py:288:19: E231 missing whitespace after ','
+As1aOr.py:288:22: E231 missing whitespace after ','
+As1aOr.py:288:29: E262 inline comment should start with '# '
+As1aOr.py:289:19: E231 missing whitespace after ','
+As1aOr.py:289:21: E231 missing whitespace after ','
+As1aOr.py:289:29: E262 inline comment should start with '# '
+As1aOr.py:290:19: E231 missing whitespace after ','
+As1aOr.py:290:21: E231 missing whitespace after ','
+As1aOr.py:290:29: E262 inline comment should start with '# '
+As1aOr.py:291:19: E231 missing whitespace after ','
+As1aOr.py:291:21: E231 missing whitespace after ','
+As1aOr.py:291:29: E262 inline comment should start with '# '
+As1aOr.py:291:60: W291 trailing whitespace
+As1aOr.py:292:20: E231 missing whitespace after ','
+As1aOr.py:292:27: E231 missing whitespace after ','
+As1aOr.py:292:44: E231 missing whitespace after ','
+As1aOr.py:293:20: E231 missing whitespace after ','
+As1aOr.py:293:27: E231 missing whitespace after ','
+As1aOr.py:293:44: E231 missing whitespace after ','
+As1aOr.py:294:20: E231 missing whitespace after ','
+As1aOr.py:294:27: E231 missing whitespace after ','
+As1aOr.py:294:44: E231 missing whitespace after ','
+As1aOr.py:295:20: E231 missing whitespace after ','
+As1aOr.py:295:27: E231 missing whitespace after ','
+As1aOr.py:295:44: E231 missing whitespace after ','
+As1aOr.py:296:20: E231 missing whitespace after ','
+As1aOr.py:296:27: E231 missing whitespace after ','
+As1aOr.py:296:44: E231 missing whitespace after ','
+As1aOr.py:297:20: E231 missing whitespace after ','
+As1aOr.py:297:27: E231 missing whitespace after ','
+As1aOr.py:297:44: E231 missing whitespace after ','
+As1aOr.py:298:20: E231 missing whitespace after ','
+As1aOr.py:298:27: E231 missing whitespace after ','
+As1aOr.py:298:44: E231 missing whitespace after ','
+As1aOr.py:299:20: E231 missing whitespace after ','
+As1aOr.py:299:27: E231 missing whitespace after ','
+As1aOr.py:299:44: E231 missing whitespace after ','
+As1aOr.py:299:65: W291 trailing whitespace
+As1aOr.py:301:1: E265 block comment should start with '# '
+As1aOr.py:301:80: E501 line too long (82 > 79 characters)
+As1aOr.py:302:1: E302 expected 2 blank lines, found 1
+As1aOr.py:303:80: E501 line too long (84 > 79 characters)
+As1aOr.py:305:19: E231 missing whitespace after ','
+As1aOr.py:305:22: E231 missing whitespace after ','
+As1aOr.py:305:29: E262 inline comment should start with '# '
+As1aOr.py:306:19: E231 missing whitespace after ','
+As1aOr.py:306:22: E231 missing whitespace after ','
+As1aOr.py:306:29: E262 inline comment should start with '# '
+As1aOr.py:307:19: E231 missing whitespace after ','
+As1aOr.py:307:21: E231 missing whitespace after ','
+As1aOr.py:307:29: E262 inline comment should start with '# '
+As1aOr.py:308:19: E231 missing whitespace after ','
+As1aOr.py:308:21: E231 missing whitespace after ','
+As1aOr.py:308:29: E262 inline comment should start with '# '
+As1aOr.py:309:19: E231 missing whitespace after ','
+As1aOr.py:309:22: E231 missing whitespace after ','
+As1aOr.py:309:29: E262 inline comment should start with '# '
+As1aOr.py:310:19: E231 missing whitespace after ','
+As1aOr.py:310:21: E231 missing whitespace after ','
+As1aOr.py:310:29: E262 inline comment should start with '# '
+As1aOr.py:311:19: E231 missing whitespace after ','
+As1aOr.py:311:21: E231 missing whitespace after ','
+As1aOr.py:311:29: E262 inline comment should start with '# '
+As1aOr.py:312:19: E231 missing whitespace after ','
+As1aOr.py:312:21: E231 missing whitespace after ','
+As1aOr.py:312:29: E262 inline comment should start with '# '
+As1aOr.py:312:61: W291 trailing whitespace
+As1aOr.py:313:20: E231 missing whitespace after ','
+As1aOr.py:313:27: E231 missing whitespace after ','
+As1aOr.py:313:44: E231 missing whitespace after ','
+As1aOr.py:314:20: E231 missing whitespace after ','
+As1aOr.py:314:27: E231 missing whitespace after ','
+As1aOr.py:314:44: E231 missing whitespace after ','
+As1aOr.py:315:20: E231 missing whitespace after ','
+As1aOr.py:315:27: E231 missing whitespace after ','
+As1aOr.py:315:44: E231 missing whitespace after ','
+As1aOr.py:316:20: E231 missing whitespace after ','
+As1aOr.py:316:27: E231 missing whitespace after ','
+As1aOr.py:316:44: E231 missing whitespace after ','
+As1aOr.py:317:20: E231 missing whitespace after ','
+As1aOr.py:317:27: E231 missing whitespace after ','
+As1aOr.py:317:44: E231 missing whitespace after ','
+As1aOr.py:318:20: E231 missing whitespace after ','
+As1aOr.py:318:27: E231 missing whitespace after ','
+As1aOr.py:318:44: E231 missing whitespace after ','
+As1aOr.py:319:20: E231 missing whitespace after ','
+As1aOr.py:319:27: E231 missing whitespace after ','
+As1aOr.py:319:44: E231 missing whitespace after ','
+As1aOr.py:320:20: E231 missing whitespace after ','
+As1aOr.py:320:27: E231 missing whitespace after ','
+As1aOr.py:320:44: E231 missing whitespace after ','
+As1aOr.py:320:64: W291 trailing whitespace
+As1aOr.py:322:1: E305 expected 2 blank lines after class or function definition, found 1
