@@ -144,9 +144,9 @@ def ordinal_dia(fecha):
 
 def dia_semana(fecha): 
     if(fecha_es_valida(fecha)):
-        year_code = year_code(fecha[0])
-        month_code = month_code(fecha[1])
-        century_code = century_code(fecha[0])
+        year_code = year_codes(fecha[0])
+        month_code = month_codes(fecha[1])
+        century_code = century_codes(fecha[0])
         dia = fecha[2]
         #si es bisiesto se le resta en 1 antes de hacer mod 7, pero es lo mismo restárselo al día
         #esto en caso de que sea Enero o Febrero
@@ -157,18 +157,18 @@ def dia_semana(fecha):
         return fecha_invalida #En caso de que la fecha no es válida
 
 # Utiliza (YY + (YY div 4)) mod 7, siendo YY los primeros 2 dígitos del año
-def year_code(year):
+def year_codes(year):
     year = year % 100
     return (year + (year // 4)) % 7
 
 # De acuerdo al mes, se obtiene un número necesario para la fórmula
-def month_code(month):
+def month_codes(month):
     _codelist_= [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5]
     return _codelist_[month-1]
 
 # Dependiendo del siglo de un año dado, se obtiene otro número utilizado en la fórmula,
 # cabe recalcar que estos códigos es para el calendario Gregoriano, en el Juliano es distinto
-def century_code(year): 
+def century_codes(year): 
     if year < 1800:
         return 4
     elif year < 1900:
@@ -277,9 +277,9 @@ def fecha_futura(fecha,dias):
 
 def cambiar_mes(fecha): # En caso de ser bisiesto, modificar febrero 
     if bisiesto(fecha[0]):
-        cantidad_meses[1] = 29
+        cantidades_meses[1] = 29
     else:
-        cantidad_meses[1] = 28
+        cantidades_meses[1] = 28
 
 #---------------------- R8 (dias_entre)----------------------------------------------
 
@@ -334,10 +334,10 @@ def fecha_mayor(fecha1, fecha2):
 def fecha_futura_habil(fecha,dias):
     for _ in range(0, dias):                      # Se hara un ciclo para ir agregando dias a las fechas validas
         n_fecha = dia_semana(fecha_futura(fecha, 1)) # Se hace esto en cada ciclo para ir verificando la valides de la fecha
-        if n_fecha != 6 and nFecha != 0:             # Se revisa si la fecha más 1 día es valida
+        if n_fecha != 6 and n_fecha != 0:             # Se revisa si la fecha más 1 día es valida
             fecha = fecha_futura(fecha, 1)          # Si es así se le suma el día
         else:
-            if nFecha == 6:                         # Se verifica si cae Sabado o Domingo
+            if n_fecha == 6:                         # Se verifica si cae Sabado o Domingo
                 fecha = fecha_futura(fecha,3)       # Si la fecha cae Sabado con ese día de más, se le suman 3 días para quedar en Lunes
             else:
                 fecha = fecha_futura(fecha,2)       # Si la fecha cae Domingo con ese día de más, se le suman 2 días para quedar en Lunes
@@ -534,12 +534,12 @@ def prueba_r9():
 
 
 prueba_r0()
-#prueba_r1()
-#prueba_r2()
-#prueba_r3()
-#prueba_r4()
-#prueba_r5()
-#prueba_r6()
-#prueba_r7()
-#prueba_r8()
-#prueba_r9()
+prueba_r1()
+prueba_r2()
+prueba_r3()
+prueba_r4()
+prueba_r5()
+prueba_r6()
+prueba_r7()
+prueba_r8()
+prueba_r9()
