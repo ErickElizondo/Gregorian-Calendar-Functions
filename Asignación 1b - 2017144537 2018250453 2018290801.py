@@ -21,6 +21,7 @@ Instituto Tecnológico de Costa Rica
 institucion_calendario_gregoriano=1582  # Fecha a partir de la cual se instituye el calendario Gregoriano en Roma 
 nombres_meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"] #Nombres de los meses
 cantidades_meses=[31,28,31,30,31,30,31,31,30,31,30,31] #Arreglo de cantidad de días según el mes (Febrero modificable)
+fecha_invalida = "La fecha ingresada es inválida"
 #|------------------------------------------------------------------------------|
 #|                     Requerimientos funcionales                               |
 #|------------------------------------------------------------------------------|
@@ -31,12 +32,13 @@ cantidades_meses=[31,28,31,30,31,30,31,31,30,31,30,31] #Arreglo de cantidad de d
 # en este orden: (año, mes, día). El resultado debe ser un valor booleano, True o False.
 
 def fecha_es_tupla(fecha) :
-    if len(fecha) == 3 :    #Se revisa si es una terna
-        if type(fecha[0]) == int and type(fecha[1]) == int and type(fecha[2]) == int:   #Se revisa si es una terna de enteros
-            if fecha[0] >= institucion_calendario_gregoriano:   #Se revisa si empieza en el año del inicio del calendario gregoriano
-                if fecha[1] >= 1 and fecha[1] <= 12 :   #Se revisa si el mes es valido
-                    if fecha[2] >= 1 and fecha[2] <= 31:       #Se revisa si el dia es valido
-                        return True
+    if len(fecha) == 3 and type(fecha[0]) == int and type(fecha[1]) == int and type(fecha[2]) == int and fecha[0] >= institucion_calendario_gregoriano and fecha[1] >= 1 and fecha[1] <= 12 and fecha[2] >= 1 and fecha[2] <= 31:
+        #Se revisa si es una terna
+        #Se revisa si es una terna de enteros
+        #Se revisa si empieza en el año del inicio del calendario gregoriano
+        #Se revisa si el mes es valido
+        #Se revisa si el dia es valido
+        return True
     return False
 
 
@@ -94,7 +96,7 @@ def dia_siguiente(fecha):
             if (fecha[2] <=29): return (fecha[0],fecha[1],fecha[2]+1) 
             else : return aumentar_mes(fecha)  #Se aumenta sólo el mes de manera normal 
         else: return aumentar_bisiesto(fecha)  #Se aumenta el día o mes considerando bisiestos
-    else: return "La fecha ingresada es inválida"
+    else: return fecha_invalida
    
 #Funcion auxiliar en R3 para aumentar el mes en la fecha
 def aumentar_mes(fecha):
@@ -128,7 +130,7 @@ def ordinal_dia(fecha):
         cantidades_meses[1]=28
         return cantidad_dias + fecha[2] # Sumar los días restantes                            
     else:
-        return  "La fecha ingresada es inválida" # Si devuelve 0, es una fecha no válida
+        return  fecha_invalida # Si devuelve 0, es una fecha no válida
       
 #---------------------- R5 (dia_semana)----------------------------------------------
 
@@ -142,9 +144,9 @@ def ordinal_dia(fecha):
 
 def dia_semana(fecha): 
     if(fecha_es_valida(fecha)):
-        year_code = yearCode(fecha[0])
-        month_code = monthCode(fecha[1])
-        century_code = centuryCode(fecha[0])
+        year_code = year_code(fecha[0])
+        month_code = month_code(fecha[1])
+        century_code = century_code(fecha[0])
         dia = fecha[2]
         #si es bisiesto se le resta en 1 antes de hacer mod 7, pero es lo mismo restárselo al día
         #esto en caso de que sea Enero o Febrero
@@ -152,21 +154,21 @@ def dia_semana(fecha):
             dia-=1
         return ((year_code + month_code + century_code + dia) % 7)
     else:
-        return "La fecha ingresada es inválida" #En caso de que la fecha no es válida
+        return fecha_invalida #En caso de que la fecha no es válida
 
 # Utiliza (YY + (YY div 4)) mod 7, siendo YY los primeros 2 dígitos del año
-def yearCode(year):
+def year_code(year):
     year = year % 100
     return (year + (year // 4)) % 7
 
 # De acuerdo al mes, se obtiene un número necesario para la fórmula
-def monthCode(month):
-    codeList= [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5]
-    return codeList[month-1]
+def month_code(month):
+    _codelist_= [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5]
+    return _codelist_[month-1]
 
 # Dependiendo del siglo de un año dado, se obtiene otro número utilizado en la fórmula,
 # cabe recalcar que estos códigos es para el calendario Gregoriano, en el Juliano es distinto
-def centuryCode(year): 
+def century_code(year): 
     if year < 1800:
         return 4
     elif year < 1900:
@@ -204,7 +206,7 @@ def imprimir_3x4(anio):
             j=0
             for j in range(4):
                 primer_dia[j]=dia_semana((anio,(j+i)+1,1))          #Asigna el primer día a cada mes
-            imprimir_4_Meses(i,primer_dia,contador_mes,banderas)  #Llama a función que se encarga de imprimir los 4 meses en línea
+            imprimir_meses4(i,primer_dia,contador_mes,banderas)  #Llama a función que se encarga de imprimir los 4 meses en línea
             i+=4
         print(("-"*144))
         cantidades_meses[1]=28
@@ -214,14 +216,13 @@ def imprimir_3x4(anio):
 
 #Funcion auxiliar que se encarga de imprimir 4 meses dados en línea en la pantalla
 #Recibe los arreglos provenientes de la función principal para trabajarlos y los modifica para la impresión de los valores
-def imprimir_4_Meses(mes,primer_dia,contador_mes,banderas):
-    indice_mes=dia=linea=0
+def imprimir_meses4(mes,primer_dia,contador_mes,banderas):
+    indice_mes=dia=0
     print(("-"*144))
-    print("{:^35}|{:^35}|{:^35}|{:^35}|".format(nombres_meses[mes],nombres_meses[mes+1],nombres_meses[mes+2],nombres_meses[mes+3]))  #Imprime los nombres de los 4 meses
-    i=0  
-    for i in range(4): print("{:^5}{:^5}{:^5}{:^5}{:^5}{:^5}{:^5}|".format('D','L','K','M','J','V','S'),end="")                      #Imprime las siglas de los 7 días de la semana para cada mes
+    print("{:^35}|{:^35}|{:^35}|{:^35}|".format(nombres_meses[mes],nombres_meses[mes+1],nombres_meses[mes+2],nombres_meses[mes+3]))  #Imprime los nombres de los 4 meses 
+    for _ in range(4): print("{:^5}{:^5}{:^5}{:^5}{:^5}{:^5}{:^5}|".format('D','L','K','M','J','V','S'),end="")                      #Imprime las siglas de los 7 días de la semana para cada mes
     print("")
-    for linea in range(6):              #Recorre las 6 líneas de impresión de cada mes en forma vertical
+    for _ in range(6):              #Recorre las 6 líneas de impresión de cada mes en forma vertical
         for indice_mes in range(4):     #Recorre los 4 meses para imprimir sus días en forma horizontal
             for dia in range(7):        #Recorre cada uno de los 7 días de la semana para imprimir el valor 
                 if dia+1<=primer_dia[indice_mes] and banderas[indice_mes]!=True:print("{:^5}".format(" "),end="")    #Si no se ha llegado el primer día del mes se imprime un espacio en blanco
@@ -234,7 +235,7 @@ def imprimir_4_Meses(mes,primer_dia,contador_mes,banderas):
         print("")
 
 #Funcion auxiliar que se encarga de retornar un número si toca imprimir o en caso contrario un espacio en blanco para imprimir
-#Recibe los arreglos provenientes de la la función auxiliar (imprimir_4_meses) y retorna el número o un espacio en blanco según corresponda
+#Recibe los arreglos provenientes de la la función auxiliar (imprimir_meses4) y retorna el número o un espacio en blanco según corresponda
 def mostrar_numero(primer_dia,contador_mes,indice):
     if contador_mes[indice]<=primer_dia:
         contador_mes[indice]+=1
@@ -250,10 +251,9 @@ def mostrar_numero(primer_dia,contador_mes,indice):
 # la fecha que está n días naturales en el futuro.
 # El resultado debe ser una fecha válida
 def fecha_futura(fecha,dias):
-    if type(dias) == int and dias>=0 and fecha_es_valida(fecha): #Verificación de datos
+    if isinstance(dias, int) and dias>=0 and fecha_es_valida(fecha): #Verificación de datos
         fecha = list(fecha)    #Tupla no es mutable
-        if bisiesto(fecha[0]):  # En caso de ser bisiesto, modificar febrero
-            cantidades_meses[1] = 29        
+        cambiar_mes(fecha)       
         while dias != 0:
             dia_actual = fecha[2]
             dia_temp = dia_actual + dias
@@ -263,10 +263,7 @@ def fecha_futura(fecha,dias):
                     fecha[0] += 1
                     fecha[1]  = 1
                     fecha[2]  = 1
-                    if bisiesto(fecha[0]):  # En caso de ser bisiesto, modificar febrero
-                        cantidades_meses[1] = 29
-                    else:
-                        cantidades_meses[1] = 28
+                    cambiar_mes(fecha)                   
                 else: #De caso contrario, solo se cambia el mes
                     fecha[1] += 1
                     fecha[2]  = 1
@@ -278,6 +275,12 @@ def fecha_futura(fecha,dias):
     else:
         return "Los parámetros son inválidos"
 
+def cambiar_mes(fecha): # En caso de ser bisiesto, modificar febrero 
+    if bisiesto(fecha[0]):
+        cantidad_meses[1] = 29
+    else:
+        cantidad_meses[1] = 28
+
 #---------------------- R8 (dias_entre)----------------------------------------------
 
 # Definición: Dadas 2 fechas válidas, f1 y f2, sin importar si f1 <= f2 o f2 <= f1, determinar el número de 
@@ -285,28 +288,28 @@ def fecha_futura(fecha,dias):
 # El resultado debe ser un número entero no negativo
 def dias_entre(fecha1, fecha2):
     if fecha_es_valida(fecha1) and fecha_es_valida(fecha2) :    #Se revisa si son fechas validas
-        diasExtra, smallestYear = 0, 0
+        _diasextra_, _smallestyear_ = 0, 0
         if fecha1[0] >= fecha2[0]:          #Se obtiene el año de la fecha más pequeña
             rep = fecha1[0] - fecha2[0]     #Se saca la diferencia entre los años
-            smallestYear = fecha2           #Se guarda ese año para más adelante
+            _smallestyear_ = fecha2           #Se guarda ese año para más adelante
         else:
             rep = fecha2[0] - fecha1[0]
-            smallestYear = fecha1
+            _smallestyear_ = fecha1
 
         #Se usa la diferencia entre los años para determinar cuantas veces se tiene que hacer el aumento
         #El año más pequeño es utilizado para saber si es bisiesto
         for var in range(0, rep):               #Se hace un loop para aumentar la diferencia que hay entre los años
-            if bisiesto(smallestYear[0] + var): #Se revisa si es bisiesto para aumentar el día extra
-                diasExtra += 366
+            if bisiesto(_smallestyear_[0] + var): #Se revisa si es bisiesto para aumentar el día extra
+                _diasextra_ += 366
             else:
-                diasExtra += 365
+                _diasextra_ += 365
 
         if fecha_mayor(fecha1, fecha2) == fecha1: #Se compara con la fecha mayor haciendo uso de la funcion auxiliar
-            return abs(ordinal_dia(fecha1) - ordinal_dia(fecha2) + diasExtra)
+            return abs(ordinal_dia(fecha1) - ordinal_dia(fecha2) + _diasextra_)
         else:
-            return abs(ordinal_dia(fecha2) - ordinal_dia(fecha1) + diasExtra)
+            return abs(ordinal_dia(fecha2) - ordinal_dia(fecha1) + _diasextra_)
     else:
-        return "Fecha Invalida"
+        return fecha_invalida
 
 # Funcion auxiliar de R8, para poder determinar cual fecha es la mayor
 def fecha_mayor(fecha1, fecha2):
@@ -329,9 +332,9 @@ def fecha_mayor(fecha1, fecha2):
 # El resultado debe ser una fecha válida que corresponda a un día hábil. 
 # Note que f puede corresponder a la fecha de un día no hábil
 def fecha_futura_habil(fecha,dias):
-    for dia in range(0, dias):                      # Se hara un ciclo para ir agregando dias a las fechas validas
-        nFecha = dia_semana(fecha_futura(fecha, 1)) # Se hace esto en cada ciclo para ir verificando la valides de la fecha
-        if nFecha != 6 and nFecha != 0:             # Se revisa si la fecha más 1 día es valida
+    for _ in range(0, dias):                      # Se hara un ciclo para ir agregando dias a las fechas validas
+        _nfecha_ = dia_semana(fecha_futura(fecha, 1)) # Se hace esto en cada ciclo para ir verificando la valides de la fecha
+        if _nfecha_ != 6 and nFecha != 0:             # Se revisa si la fecha más 1 día es valida
             fecha = fecha_futura(fecha, 1)          # Si es así se le suma el día
         else:
             if nFecha == 6:                         # Se verifica si cae Sabado o Domingo
@@ -345,7 +348,7 @@ def fecha_futura_habil(fecha,dias):
 
 
 #---------------------- R0 (fecha_es_tupla)---------------------------------------
-def pruebaR0():
+def prueba_r0():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R0 (fecha_es_tupla):\n")
     fecha1 = (1900,12,29)           #Resultado: true
@@ -367,7 +370,7 @@ def pruebaR0():
     
 
 #---------------------- R1 (bisiesto)---------------------------------------------
-def pruebaR1():
+def prueba_r1():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R1 (bisiesto):\n")
     year1 = 2024    #Resultado: true
@@ -388,7 +391,7 @@ def pruebaR1():
     print("Año: ",year8,"=> Resultado: ",bisiesto(year8))
 
 #---------------------- R2 (fecha_es_valida)--------------------------------------
-def pruebaR2():
+def prueba_r2():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R2 (fecha_es_valida):\n")
     fecha1 = (2016,12,1)    #Resultado: true
@@ -409,7 +412,7 @@ def pruebaR2():
     print("Fecha: ",fecha8,"=> Resultado: ",fecha_es_valida(fecha8))
 
 #---------------------- R3 (dia_siguiente)----------------------------------------
-def pruebaR3():
+def prueba_r3():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R3 (dia_siguiente):\n")
 
@@ -431,7 +434,7 @@ def pruebaR3():
     print("Fecha: ",fecha8,"=> Resultado: ",dia_siguiente(fecha8))  
 
 #---------------------- R4 (ordinal_dia)------------------------------------------
-def pruebaR4():
+def prueba_r4():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R4 (ordinal_dia):\n")
     fecha1 = (2016,12,1)    #Resultado: 336
@@ -452,7 +455,7 @@ def pruebaR4():
     print("Fecha: ",fecha8,"=> Resultado: ",ordinal_dia(fecha8))  
 
 #---------------------- R5 (dia_semana)-------------------------------------------
-def pruebaR5():
+def prueba_r5():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R5 (dia_semana):\n")
     fecha1 = (2016,12,1)    #Resultado: 4 Jueves
@@ -473,7 +476,7 @@ def pruebaR5():
     print("Fecha: ",fecha8,"=> Resultado: ",dia_semana(fecha8))  
 
 #---------------------- R6 (imprimir_3x4)-------------------------------------------
-def pruebaR6():
+def prueba_r6():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R6 (imprimir_3x4):\n")
     imprimir_3x4(2021)
@@ -481,7 +484,7 @@ def pruebaR6():
     imprimir_3x4(1100)
 
 #---------------------- R7 (fecha_futura)-------------------------------------------
-def pruebaR7():
+def prueba_r7():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R7 (fecha_futura):\n")
     fecha1 = (2016,12,1)  
@@ -499,7 +502,7 @@ def pruebaR7():
 
 
 #---------------------- R8 (dias_entre)-------------------------------------------
-def pruebaR8():
+def prueba_r8():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R8 (dias_entre):\n")
     fecha1 = (2016,1,1)
@@ -517,7 +520,7 @@ def pruebaR8():
 
 
 #---------------------- R9 (fecha_futura_habil)-------------------------------------------
-def pruebaR9():
+def prueba_r9():
     print("\n-------------------------------------------------------------------\n")
     print("\t\tPruebas requerimiento R9 (fecha_futura_habil):\n")
     fecha1, dias1 = (2021,4,10), 1   
@@ -530,13 +533,13 @@ def pruebaR9():
     print("Fecha inicial: ",fecha4,"=>  Resultado de la fecha después de ",dias4," dias hábiles: ",fecha_futura_habil(fecha4,dias4)) 
 
 
-#pruebaR0()
-#pruebaR1()
-#pruebaR2()
-#pruebaR3()
-#pruebaR4()
-#pruebaR5()
-pruebaR6()
-pruebaR7()
-pruebaR8()
-pruebaR9()
+prueba_r0()
+#prueba_r1()
+#prueba_r2()
+#prueba_r3()
+#prueba_r4()
+#prueba_r5()
+#prueba_r6()
+#prueba_r7()
+#prueba_r8()
+#prueba_r9()
