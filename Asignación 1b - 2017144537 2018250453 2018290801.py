@@ -288,26 +288,26 @@ def cambiar_mes(fecha): # En caso de ser bisiesto, modificar febrero
 # El resultado debe ser un número entero no negativo
 def dias_entre(fecha1, fecha2):
     if fecha_es_valida(fecha1) and fecha_es_valida(fecha2) :    #Se revisa si son fechas validas
-        _diasextra_, _smallestyear_ = 0, 0
+        dias_extra, smallest_year = 0, 0
         if fecha1[0] >= fecha2[0]:          #Se obtiene el año de la fecha más pequeña
             rep = fecha1[0] - fecha2[0]     #Se saca la diferencia entre los años
-            _smallestyear_ = fecha2           #Se guarda ese año para más adelante
+            smallest_year = fecha2           #Se guarda ese año para más adelante
         else:
             rep = fecha2[0] - fecha1[0]
-            _smallestyear_ = fecha1
+            smallest_year = fecha1
 
         #Se usa la diferencia entre los años para determinar cuantas veces se tiene que hacer el aumento
         #El año más pequeño es utilizado para saber si es bisiesto
         for var in range(0, rep):               #Se hace un loop para aumentar la diferencia que hay entre los años
-            if bisiesto(_smallestyear_[0] + var): #Se revisa si es bisiesto para aumentar el día extra
-                _diasextra_ += 366
+            if bisiesto(smallest_year[0] + var): #Se revisa si es bisiesto para aumentar el día extra
+                dias_extra += 366
             else:
-                _diasextra_ += 365
+                dias_extra += 365
 
         if fecha_mayor(fecha1, fecha2) == fecha1: #Se compara con la fecha mayor haciendo uso de la funcion auxiliar
-            return abs(ordinal_dia(fecha1) - ordinal_dia(fecha2) + _diasextra_)
+            return abs(ordinal_dia(fecha1) - ordinal_dia(fecha2) + dias_extra)
         else:
-            return abs(ordinal_dia(fecha2) - ordinal_dia(fecha1) + _diasextra_)
+            return abs(ordinal_dia(fecha2) - ordinal_dia(fecha1) + dias_extra)
     else:
         return fecha_invalida
 
@@ -333,8 +333,8 @@ def fecha_mayor(fecha1, fecha2):
 # Note que f puede corresponder a la fecha de un día no hábil
 def fecha_futura_habil(fecha,dias):
     for _ in range(0, dias):                      # Se hara un ciclo para ir agregando dias a las fechas validas
-        _nfecha_ = dia_semana(fecha_futura(fecha, 1)) # Se hace esto en cada ciclo para ir verificando la valides de la fecha
-        if _nfecha_ != 6 and nFecha != 0:             # Se revisa si la fecha más 1 día es valida
+        n_fecha = dia_semana(fecha_futura(fecha, 1)) # Se hace esto en cada ciclo para ir verificando la valides de la fecha
+        if n_fecha != 6 and nFecha != 0:             # Se revisa si la fecha más 1 día es valida
             fecha = fecha_futura(fecha, 1)          # Si es así se le suma el día
         else:
             if nFecha == 6:                         # Se verifica si cae Sabado o Domingo
